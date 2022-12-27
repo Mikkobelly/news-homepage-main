@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+
+  <div class="nav-popup-section">
+    <div class="nav-popup">
+
+      <div class="nav-popup__close">
+        <img class="nav-popup__close-button" src="assets/images/icon-menu-close.svg" alt="nav-popup close icon">
+      </div>
+
+      <ul class="nav-popup__list">
+        <li class="nav-popup__item"><a href="#" class="nav-popup__link">Home</a></li>
+        <li class="nav-popup__item"><a href="#" class="nav-popup__link">New</a></li>
+        <li class="nav-popup__item"><a href="#" class="nav-popup__link">Popular</a></li>
+        <li class="nav-popup__item"><a href="#" class="nav-popup__link">Trending</a></li>
+        <li class="nav-popup__item"><a href="#" class="nav-popup__link">Categories</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <header class="header">
+    <nav class="navigation">
+      <div class="navigation__logo-box">
+        <img src="assets/images/logo.svg" alt="header logo" class="navigation__logo">
+      </div>
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">New</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Popular</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Trending</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Categories</a></li>
+      </ul>
+
+      <div class="navigation__toggle-box">
+        <img src="assets/images/icon-menu.svg" alt="navigaiton toggle icon">
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="main-section">
+
+    <div class="row main">
+
+      <div class="col-2-of-3 main__left">
+        <div class="main__img-box">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="main image" class="main__img">
+        </div>
+
+        <div class="row main__text">
+          <div class="col-1-of-2 main__text-left">
+            <h1 class="main__text-title">The Bright Future of Web 3.0?</h1>
+          </div>
+
+          <div class="col-1-of-2 main__text-right">
+            <p class="main__text-paragraph">We dive into the next evolution of the web that claims to put the power of
+              the platforms back into the
+              hands of the
+              people.
+              But is it really fulfilling its promise?</p>
+            <a href="#" class="main__button">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-1-of-3 main__right">
+        <aside class="card">
+          <h2 class="card__heading heading-medium">New</h2>
+
+          <h3 class="card__sub-heading heading-small u-margin-bottom-small u-margin-top-medium">Hydrogen VS Electric
+            Cars</h3>
+          <p class="card__text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+
+          <h3 class="card__sub-heading heading-small u-margin-bottom-small u-margin-top-medium">The Downsides of AI
+            Artistry?</h3>
+          <p class="card__text">What are the possible adverse effects of on-demand AI image
+            generation?</p>
+
+          <h3 class="card__sub-heading heading-small u-margin-bottom-small u-margin-top-medium">Is VC Funding Drying Up?
+          </h3>
+          <p class="card__text">Private funding by VC firms is down 50% YOY. We take a look at
+            what that means.</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <section class="article-list-section">
+    <div class="row">
+      <div class="col-1-of-3 article">
+        <div class="article__left">
+          <img class="article__img" src="assets/images/image-retro-pcs.jpg" alt="image retro pc">
+        </div>
+
+        <div class="article__right">
+          <p class="article__number">01</p>
+          <h3 class="article__heading heading-x-small u-margin-bottom-small">Reviving Retro PCs</h3>
+          <p class="article__text">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="col-1-of-3 article">
+        <div class="article__left">
+          <img class="article__img" src="assets/images/image-top-laptops.jpg" alt="image laptop">
+        </div>
+
+        <div class="article__right">
+          <p class="article__number">02</p>
+          <h3 class="article__heading heading-x-small u-margin-bottom-small">Top 10 Laptops of 2022</h3>
+          <p class="article__text">Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="col-1-of-3 article">
+        <div class="article__left">
+          <img class="article__img" src="assets/images/image-gaming-growth.jpg" alt="image gaming">
+        </div>
+
+        <div class="article__right">
+          <p class="article__number">03</p>
+          <h3 class="article__heading heading-x-small u-margin-bottom-small">The Growth of Gaming</h3>
+          <p class="article__text">How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- jQery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> -->
+
+  <!-- custom JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>

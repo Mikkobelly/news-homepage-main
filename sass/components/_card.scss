@@ -1,0 +1,22 @@
+.card {
+    min-height: 100%;
+    padding: 2.5rem 2.5rem 4rem;
+    background-color: $color-blue-dark;
+    color: $color-grey-light;
+
+    &__sub-heading {
+        @include transite;
+
+        &:hover {
+            color: $color-soft-orange;
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        &:not(:last-child) {
+            padding-bottom: 3rem;
+            border-bottom: 1px solid $color-grey-light-2;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $color-blue-dark;
+    line-height: 1.5;
+}
+
+.main__text-title {
+    font-size: 5rem;
+    font-weight: 800;
+    color: $color-blue-dark;
+    line-height: 1;
+}
+
+.heading-medium {
+    font-size: 4rem;
+    color: $color-soft-orange;
+}
+
+.heading-small {
+    color: $color-off-white;
+}
+
+.heading-x-small {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $color-off-white;
+}

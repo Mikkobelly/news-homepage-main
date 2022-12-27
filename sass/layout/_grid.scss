@@ -1,0 +1,48 @@
+.row {
+    width: 100%;
+
+    @include clearfix;
+
+
+    [class^="col-"] {
+        min-height: 100%;
+        float: left;
+
+        &:not(:last-child) {
+            padding-right: $gutter-horizontal;
+
+            @include respond(tab-port) {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+
+        @include respond(tab-port) {
+            float: none;
+            width: 100%;
+        }
+
+    }
+
+    .col-2-of-3 {
+        width: calc(2 * ((100% -2 * #{$gutter-horizontal}) / 3));
+
+        @include respond(tab-port) {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+
+        @include respond(phone) {
+            float: none;
+            width: 100%;
+        }
+    }
+
+}
